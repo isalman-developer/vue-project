@@ -3,6 +3,6 @@
 
 <template>
   <main>
-    <TheWelcome />
+    <h1>Welcome to vue</h1>
   </main>
 </template>
