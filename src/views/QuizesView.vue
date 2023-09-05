@@ -1,9 +1,9 @@
 <script setup>
-import {useRouter, RouterLink} from 'vue-router';
 import { ref, watch } from 'vue';
 
 import q from '../data/quizes.json';
 import Card from '../components/Card.vue';
+import RedirectButton from '../components/RedirectButton.vue';
 
 const quizes = ref(q);
 const search = ref("")
@@ -35,14 +35,12 @@ watch(search, function() {
                 <h1>Quizes</h1>
                 <input v-model.trim="search" type="text" placeholder="Search..." />
             </div>
-
             <div>
-                <RouterLink :to="{name:'home'}" class="btn">Back</RouterLink>
+                <RedirectButton :path="'/'" :title="'Home'"/>
             </div>
         </header>
         <div class="options-container">
             <Card v-for="quiz in quizes" :key="quiz.id" :quiz="quiz" />
-
         </div>
     </div>
 </template>
