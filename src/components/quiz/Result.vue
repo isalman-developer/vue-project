@@ -1,6 +1,5 @@
 <script setup>
 import {defineProps} from 'vue';
-import RedirectButton from './RedirectButton.vue';
 
 const {totalQuestionsLength, correctAnswersLength} = defineProps(["totalQuestionsLength","correctAnswersLength"]);
 

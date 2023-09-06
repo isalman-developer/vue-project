@@ -26,6 +26,7 @@ const HomePage = () => {
         <div class="nav-links">
             <RouterLink to="/about">About Us</RouterLink>
             <RouterLink to="/quizes">Quizes</RouterLink>
+            <RouterLink to="/movies/api">Movie API</RouterLink>
         </div>
     </div>
 </template>

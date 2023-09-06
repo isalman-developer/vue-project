@@ -1,11 +1,10 @@
 <script setup>
-import Question from "../components/Question.vue"
-import QuizHeader from "../components/QuizHeader.vue"
-import Result from '../components/Result.vue'
+import Question from "../../components/quiz/Question.vue"
+import QuizHeader from "../../components/quiz/QuizHeader.vue"
+import Result from '../../components/quiz/Result.vue'
 import { useRoute } from "vue-router"
 import { computed, ref } from "vue";
-import quizes from "../data/quizes.json"
-import RedirectButton from "../components/RedirectButton.vue";
+import quizes from "../../data/quizes.json"
 
 const route = useRoute()
 const quizId = parseInt(route.params.id);

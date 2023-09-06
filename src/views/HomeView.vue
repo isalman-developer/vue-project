@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink } from 'vue-router';
-
 </script>
 
 <template>
@@ -11,5 +10,5 @@ import { RouterLink } from 'vue-router';
         <RouterLink to="/array/shift">Array Shift</RouterLink>
       </li>
     </ol>
-</main>
+  </main>
 </template>

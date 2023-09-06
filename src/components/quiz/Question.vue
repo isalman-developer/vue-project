@@ -1,6 +1,5 @@
 <script setup>
 import { defineProps, defineEmits } from "vue"
-import RedirectButton from "./RedirectButton.vue";
 const { question } = defineProps(['question']);
 
 // defining emits

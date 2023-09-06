@@ -1,6 +1,6 @@
 <script setup>
 import { defineProps } from "vue";
-import RedirectButton from "./RedirectButton.vue";
+import RedirectButton from "../common/redirectbutton.vue";
 
 const { questionStatus, barPercentage } = defineProps([
     "questionStatus",

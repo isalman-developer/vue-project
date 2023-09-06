@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import QuizesView from "../views/QuizesView.vue";
+import QuizesView from "../views/Quiz/QuizesView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,7 +16,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/About/AboutView.vue"),
     },
     {
       path: "/quizes",
@@ -26,12 +26,22 @@ const router = createRouter({
     {
       path: "/quiz/:id",
       name: "quiz",
-      component: () => import("../views/QuizView.vue"),
+      component: () => import("../views/Quiz/QuizView.vue"),
     },
     {
       path:'/array/shift',
       name: 'array.shift',
-      component: () => import('../views/ArrayShift.vue')
+      component: () => import('../views/extra/ArrayShift.vue')
+    },
+    {
+      path: '/movies/api',
+      name:'movies.api',
+      component: () => import('../views/Movies/MoviesView.vue')
+    },
+    {
+      path: '/:catchAll(.*)*',
+      name: '404.not.found',
+      component: () => import('../components/common/NotFound.vue')
     }
   ],
 });

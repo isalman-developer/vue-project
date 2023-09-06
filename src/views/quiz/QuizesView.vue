@@ -1,9 +1,9 @@
 <script setup>
 import { ref, watch } from 'vue';
 
-import q from '../data/quizes.json';
-import Card from '../components/Card.vue';
-import RedirectButton from '../components/RedirectButton.vue';
+import q from '../../data/quizes.json';
+import Card from '../../components/quiz/Card.vue';
+import RedirectButton from '../../components/common/RedirectButton.vue';
 
 const quizes = ref(q);
 const search = ref("")
