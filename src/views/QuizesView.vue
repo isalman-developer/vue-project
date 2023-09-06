@@ -40,7 +40,9 @@ watch(search, function() {
             </div>
         </header>
         <div class="options-container">
-            <Card v-for="quiz in quizes" :key="quiz.id" :quiz="quiz" />
+            <transition-group name="card" appear>
+                <Card v-for="quiz in quizes" :key="quiz.id" :quiz="quiz" />
+            </transition-group>
         </div>
     </div>
 </template>
@@ -91,5 +93,17 @@ header input {
     text-align: center;
     font-weight: 700;
     text-decoration: none;
+}
+
+.card-enter-from{
+    transform: translateY(-50px);
+    opacity: 0;
+}
+.card-enter-to{
+    transform: translateY(0);
+    opacity: 1;
+}
+.card-enter-active{
+    transition: all 0.5s ease;
 }
 </style>

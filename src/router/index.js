@@ -28,6 +28,11 @@ const router = createRouter({
       name: "quiz",
       component: () => import("../views/QuizView.vue"),
     },
+    {
+      path:'/array/shift',
+      name: 'array.shift',
+      component: () => import('../views/ArrayShift.vue')
+    }
   ],
 });
 
