@@ -9,6 +9,9 @@ import { RouterLink } from 'vue-router';
       <li>
         <RouterLink to="/array/shift">Array Shift</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/slots">Slots Concept</RouterLink>
+      </li>
     </ol>
   </main>
 </template>
