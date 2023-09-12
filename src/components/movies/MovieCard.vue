@@ -1,9 +1,8 @@
 <script setup>
 import { defineProps } from "vue";
 const { image, name } = defineProps(["image", "name"]);
-
-console.log(name);
 </script>
+
 <template>
     <n-card>
         <template #cover>

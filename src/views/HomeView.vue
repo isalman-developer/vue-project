@@ -12,6 +12,9 @@ import { RouterLink } from 'vue-router';
       <li>
         <RouterLink to="/slots">Slots Concept</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/movies/api">keep-alive</RouterLink>
+      </li>
     </ol>
   </main>
 </template>

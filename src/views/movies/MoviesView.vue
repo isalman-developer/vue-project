@@ -1,21 +1,19 @@
 <script setup>
-import MovieCards from "../../components/movies/MovieCards.vue";
+import { ref } from "vue";
+import Hero from "../../components/movies/Hero.vue";
+import BreakingBadCardSuspense from '../../components/movies/BreakingBadCardSuspense.vue';
+import RickAndMortySuspense from '../../components/movies/RickAndMortySuspense.vue';
+
+const isBreakingBad = ref(false);
 </script>
 <template>
     <div>
-        <h2>Heros</h2>
-        <Suspense>
-            <template #default>
-                <MovieCards />
-            </template>
-            <template #fallback>
-                <div class="cards">
-                    <n-space>
-                        <n-spin size="large" />
-                    </n-space>
-                </div>
-            </template>
-        </Suspense>
+        <!-- isBreakingBad is a prop which send data to Hero
+            @selectShow is actually an emit from Hero, when it receives this emit, we toogle status isBreakingBad -->
+        <Hero :isBreakingBad="isBreakingBad" @selectShow="isBreakingBad = !isBreakingBad" />
+        <KeepAlive>
+            <Component :is="isBreakingBad ? BreakingBadCardSuspense : RickAndMortySuspense" />
+        </KeepAlive>
     </div>
 </template>
 
