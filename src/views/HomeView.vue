@@ -15,6 +15,15 @@ import { RouterLink } from 'vue-router';
       <li>
         <RouterLink to="/movies/api">keep-alive</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/state-management">State Management</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/props-drilling">Props Drilling / Provide and Inject</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/composables">Composables</RouterLink>
+      </li>
     </ol>
   </main>
 </template>

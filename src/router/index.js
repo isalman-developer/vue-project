@@ -13,9 +13,6 @@ const router = createRouter({
     {
       path: "/about",
       name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/About/AboutView.vue"),
     },
     {
@@ -47,6 +44,21 @@ const router = createRouter({
       path: '/:catchAll(.*)*',
       name: '404.not.found',
       component: () => import('../components/common/NotFound.vue')
+    },
+    {
+      path: '/state-management',
+      name: 'state.mangement',
+      component: () => import('../../src/views/state-management/StateView.vue')
+    },
+    {
+      path: '/props-drilling',
+      name: 'props.drilling',
+      component: () => import('../../src/views/props-drilling/PropsDrillingView.vue')
+    },
+    {
+      path: '/composables',
+      name: 'composables',
+      component: () => import('../../src/views/composables/ComposableView.vue')
     }
   ],
 });
