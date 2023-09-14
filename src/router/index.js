@@ -59,6 +59,11 @@ const router = createRouter({
       path: '/composables',
       name: 'composables',
       component: () => import('../../src/views/composables/ComposableView.vue')
+    },
+    {
+      path: '/pinia',
+      name: 'pinia',
+      component: () => import('../../src/views/pinia/PiniaView.vue')
     }
   ],
 });

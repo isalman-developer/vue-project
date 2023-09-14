@@ -18,4 +18,7 @@ const { numbers, addNumber } = userNumber()
             if you look at the script tag of each component you will notice that i have defined addNumber or filterNumber function. but i have imported something called userNumber, which is a composables(trait)
         </h4>
     </div>
+
+  <h1>Same thing has been done by <RouterLink to="pinia">Pinia</RouterLink> </h1>
+
 </template>

@@ -24,6 +24,9 @@ import { RouterLink } from 'vue-router';
       <li>
         <RouterLink to="/composables">Composables</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/pinia">Pinia</RouterLink>
+      </li>
     </ol>
   </main>
 </template>
