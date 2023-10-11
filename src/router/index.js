@@ -64,6 +64,16 @@ const router = createRouter({
       path: '/pinia',
       name: 'pinia',
       component: () => import('../../src/views/pinia/PiniaView.vue')
+    },
+    {
+      path: '/typescript',
+      name: 'typescript',
+      component: () => import('../../src/views/typescript/TypescriptView.vue')
+    },
+    {
+      path: '/invitation',
+      name: 'invitation',
+      component: () => import('../../src/views/invitation/InvitationView.vue')
     }
   ],
 });

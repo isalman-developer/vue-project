@@ -27,6 +27,7 @@ const HomePage = () => {
             <RouterLink to="/about">About Us</RouterLink>
             <RouterLink to="/quizes">Quizes</RouterLink>
             <RouterLink to="/movies/api">Movie API</RouterLink>
+            <RouterLink to="/invitation">Invitation TS</RouterLink>
         </div>
     </div>
 </template>

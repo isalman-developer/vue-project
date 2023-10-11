@@ -27,6 +27,9 @@ import { RouterLink } from 'vue-router';
       <li>
         <RouterLink to="/pinia">Pinia</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/typescript">Type Script</RouterLink>
+      </li>
     </ol>
   </main>
 </template>
